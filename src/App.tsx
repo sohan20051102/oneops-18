@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import DashboardLayout from "./components/DashboardLayout";
 import NotFound from "./pages/NotFound";
+import Errors from "./pages/Errors";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/dashboard" element={<DashboardLayout />} />
+              <Route path="/errors" element={<Errors />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
